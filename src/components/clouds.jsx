@@ -1,0 +1,6 @@
+import cloud4 from "/img/clouds/4.png"
+import cloud5 from "/img/clouds/5.png"
+import cloud6 from "/img/clouds/6.png"
+import cloud7 from "/img/clouds/7.png"
+import cloud8 from "/img/clouds/8.png"
+import cloud9 from "/img/clouds/9.png"

@@ -1,0 +1,212 @@
+.load {
+    background-color: #fdfdfd;
+}
+
+.load .gif {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.load .load_w {
+    color: #bac7ee;
+    letter-spacing: 3.5rem;
+    margin-right: -3.5rem;
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-bottom: auto;
+    opacity: 0.7;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+}
+
+.vl {
+    border-right: 2px solid white;
+    height: 30px;
+}
+
+
+.background {
+    filter: brightness(1);
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+}
+
+.title .word {
+    position: relative;
+    font-size: 5rem;
+    letter-spacing: 7rem;
+    margin-right: -7rem;
+    top: 0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.clouds img {
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+    width: 200px;
+}
+
+.title .clouds .c1 {
+    transform: translateX(200%);
+}
+
+.title .clouds .c2 {
+    transform: translateX(300%);
+}
+
+.title .clouds .c3 {
+    transform: translateX(400%);
+}
+
+.title .clouds .c4 {
+    transform: translateX(500%);
+}
+
+.title .clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation-name: clouds;
+    animation-duration: 5s;
+    animation: moving 5s infinite linear;
+}
+
+@keyframes clouds {
+}
+
+/* @keyframes  clouds{
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+} */
+
+
+.content .story {
+    margin: 500px 20%;
+    text-align: left;
+    line-height: 50px;
+}
+
+.chapter {
+    width: 100%;
+}
+
+.chapter .title {
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+    top: 0;
+}
+
+.work-description {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-gap: 25px;
+    padding: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
+    will-change: width, height;
+}
+
+.item_2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    will-change: transform, opacity;
+ }
+
+ .works {
+    background-color: #222222;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+ }
+  
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 10rem;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.work-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 10rem;
+    width: 25%;
+    margin-left: 15%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.7;
+}
