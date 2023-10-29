@@ -197,16 +197,45 @@
     border-radius: 10px;
 }
 
+.work-toggler-layer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .work-toggler {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
-    height: 10rem;
-    width: 25%;
-    margin-left: 15%;
+    height: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     border-radius: 10px;
     background-color: white;
+    opacity: 0.7;
+}
+
+.progress-layer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 5%;
+    margin-left: auto;
+}
+
+.progress-bar-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: auto;
+    width: 50%;
+    margin-right: 15%;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 10px;
     opacity: 0.7;
 }
