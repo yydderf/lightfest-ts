@@ -6,7 +6,7 @@ import { Environment, OrbitControls, useFBX } from '@react-three/drei'
 
 import "./root.css"
 
-import background from "/img/longbackground.png"
+import background from "/img/longbackground.webp"
 import mountain_loading from "/gif/loading_m.gif"
 
 import cloud4 from '/img/clouds/4.png'
