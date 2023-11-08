@@ -6,7 +6,7 @@ import { Environment, OrbitControls, useFBX } from '@react-three/drei'
 
 import "./root.css"
 
-import background from "/img/longbackground.png"
+import background from "/img/longbackground.webp"
 import mountain_loading from "/gif/loading_m.gif"
 
 import cloud4 from '/img/clouds/4.png'
@@ -53,7 +53,7 @@ const Scene = () => {
 }
 
 export default function App() {
-  const total_pages = 10
+  const total_pages = 8
   const parallax = useRef<IParallax>(null!)
   const [screenLoading, setScreenLoading] = useState(false);
   const [showWork, setShowWork] = useState(false);
@@ -108,9 +108,12 @@ export default function App() {
       </div>
     ): (
     <div style={{ width: '100%', height: '100%', userSelect: "none"}}>
-      <Parallax ref={parallax} pages={total_pages}>
+      <Parallax
+          ref={parallax}
+          pages={total_pages}
+          innerStyle={{backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPositionX: 'center' }}
+      >
 
-        <ParallaxLayer offset={0} speed={0} factor={8} style={{backgroundImage: `url(${background})`, backgroundSize: 'cover'}} />
         <ParallaxLayer offset={8} speed={0} factor={4} style={{backgroundColor: "#6a7f9a"}} />
         <ParallaxLayer className="work-toggler-layer" sticky={{start: 2, end: 10}} style={{width: "100%"}} onClick={() => scrollToNext()}>
             {/* <div className="work-toggler" onClick={() => console.log(showWork)} /> */}
