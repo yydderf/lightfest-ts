@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,6 +9,7 @@ import Game from "./routes/game";
 import About from "./routes/about";
 import Gallery from "./routes/gallery";
 import ErrorPage from "./error-page";
+import App from "./App";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +27,11 @@ const router = createBrowserRouter([
     element: <About />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/test",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

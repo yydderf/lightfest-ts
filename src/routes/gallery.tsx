@@ -5,9 +5,11 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls, useFBX } from '@react-three/drei'
 
 import "./root.css"
+import NavBar from "../components/nav/nav"
 
 import background from "/img/longbackground.webp"
 import mountain_loading from "/gif/loading_m.gif"
+import mountain_icon from "/img/mountain_icon.png"
 
 import cloud4 from '/img/clouds/4.png'
 import cloud5 from '/img/clouds/5.png'
@@ -108,6 +110,7 @@ export default function App() {
       </div>
     ): (
     <div style={{ width: '100%', height: '100%', userSelect: "none"}}>
+      <NavBar brandName="LightFest" imageSrcPath={mountain_icon} navItems={["Home", "About", "Game"]}/>
       <Parallax
           ref={parallax}
           pages={total_pages}

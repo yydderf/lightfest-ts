@@ -1,0 +1,85 @@
+.stories-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  .stories-header{
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+    margin: auto;
+
+    p {
+      font-weight: 200;
+      font-size: 20px;
+      text-align: right;
+    }
+  }
+  .stories-title{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+
+      img {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+
+      }
+
+      h1 {
+        font-size: 96px;
+        font-weight: 100;
+
+      }
+
+      button {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+
+      }
+    }
+  }
+  .stories-container{
+    flex: 2;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+
+    .stories-box{
+      padding: 50px;
+      border: 0.5px solid white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 5%;
+
+
+      button {
+        padding: 10px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
