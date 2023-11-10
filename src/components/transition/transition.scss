@@ -6,7 +6,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(100%);
+        filter: opacity(25%) blur(5px);
     }
 
     .txt-wrapper {

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 import NavBar from "../nav/nav";
 
-import banner from "/img/mountains.png"
-import scroll from "/img/scroll.png"
+// import banner from "/img/mountains.png"
+import banner from "/img/longbackground.png"
 
 const verticalVariants = {
     init: {
@@ -54,7 +54,10 @@ const Banner = () => {
                     <motion.h1 variants={verticalVariants}>嶼</motion.h1>
                     <motion.h2 variants={sideVariants}>LIGHTFEST</motion.h2>
                 </div>
-                <motion.img variants={sideVariants} animate="scroll" src={scroll} alt="" />
+                {/* <motion.img variants={sideVariants} animate="scroll" src={scroll} alt="" /> */}
+                <div className="scroll-container">
+                    <motion.div variants={sideVariants} animate="scroll" className="scroll"/>
+                </div>
             </motion.div>
         </div>
     )

@@ -7,14 +7,13 @@ import {
 
 import Game from "./routes/game";
 import About from "./routes/about";
-import Gallery from "./routes/gallery";
 import ErrorPage from "./error-page";
 import App from "./App";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Gallery />,
+    element: <App />,
     errorElement: <ErrorPage />,
   },
   {
@@ -27,11 +26,6 @@ const router = createBrowserRouter([
     element: <About />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/test",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

@@ -1,5 +1,5 @@
 import './transition.scss'
-import videoBackground from '/mp4/transition.mp4'
+import videoBackground from '/mp4/transition-2.mp4'
 
 type Props = {
   title: string
