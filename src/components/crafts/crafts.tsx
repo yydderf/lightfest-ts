@@ -50,7 +50,7 @@ const Single: React.FC<{ item: Item }> = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-130, 200]);
 
   return (
     <section>

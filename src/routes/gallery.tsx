@@ -1,15 +1,15 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
-import { animated, useTransition, useSpring, useChain, config, useSpringRef } from '@react-spring/web'
-import { Canvas } from '@react-three/fiber'
-import { Environment, OrbitControls, useFBX } from '@react-three/drei'
+import { animated, useSpring, useChain, config, useSpringRef } from '@react-spring/web'
+// import { Canvas } from '@react-three/fiber'
+// import { Environment, OrbitControls, useFBX } from '@react-three/drei'
 
 import "./root.css"
 import NavBar from "../components/nav/nav"
 
 import background from "/img/longbackground.webp"
 import mountain_loading from "/gif/loading_m.gif"
-import mountain_icon from "/img/mountain_icon.png"
+// import mountain_icon from "/img/mountain_icon.png"
 
 import cloud4 from '/img/clouds/4.png'
 import cloud5 from '/img/clouds/5.png'
@@ -49,10 +49,10 @@ const messages = [[
     ]
 ]
 
-const Scene = () => {
-    const fbx = useFBX("/model/reignite")
-    return <primitive object={fbx} scale={0.005} />;
-}
+// const Scene = () => {
+//     const fbx = useFBX("/model/reignite")
+//     return <primitive object={fbx} scale={0.005} />;
+// }
 
 export default function App() {
   const total_pages = 8
@@ -79,11 +79,11 @@ export default function App() {
     to: {width: showWork ? "100%" : "5%", height: showWork ? "75%" : "25%"},
   })
 
-  const progressApi = useSpringRef()
-  const progressProps = useSpring({
-    ref: progressApi,
-    config: config.slow,
-  })
+  // const progressApi = useSpringRef()
+  // const progressProps = useSpring({
+  //   ref: progressApi,
+  //   config: config.slow,
+  // })
 
   const transApi = useSpringRef()
 //   const transition = useTransition(showWork ? data : [], {
@@ -110,7 +110,7 @@ export default function App() {
       </div>
     ): (
     <div style={{ width: '100%', height: '100%', userSelect: "none"}}>
-      <NavBar brandName="LightFest" imageSrcPath={mountain_icon} navItems={["Home", "About", "Game"]}/>
+      <NavBar />
       <Parallax
           ref={parallax}
           pages={total_pages}

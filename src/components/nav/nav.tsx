@@ -1,6 +1,6 @@
 import './nav.scss'
 
-import banner from "/img/mountains.png"
+// import banner from "/img/mountains.png"
 
 const NavBar = () => {
   return (
