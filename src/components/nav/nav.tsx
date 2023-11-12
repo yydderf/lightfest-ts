@@ -12,7 +12,7 @@ const NavBar = () => {
           <a href="#">主頁</a>
           <a href="#">工作坊</a>
           <a href="#">虛擬展場</a>
-          <a href="#">關於</a>
+          <a href="/about">關於</a>
         </div>
       </div>
     </div>

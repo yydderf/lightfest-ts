@@ -1,5 +1,20 @@
 export const departments = [
     {
+        id: 'core',
+        name: '核心',
+        members: [
+            {name: '廖奕宣'},
+            {name: '蔡涵雅'},
+            {name: '張鈺群'},
+            {name: '潘丞詡'},
+            {name: '林曉玫'},
+            {name: '林睿霖'},
+            {name: '賴俞安'},
+            {name: '陳品兆'},
+            {name: '黃婉瑜'},
+        ],
+    },
+    {
         id: 'public-relations',
         name: '公關',
         members: [
