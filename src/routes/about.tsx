@@ -5,6 +5,7 @@ import "./about.css"
 
 import * as Tabs from "@radix-ui/react-tabs";
 import {departments} from "../lib/organization.ts";
+import NavBar from "../components/nav/nav.tsx";
 
 const Hosts = (): ReactElement => (
     <section className="about-container about-container__center">
@@ -89,6 +90,10 @@ const Members = (): ReactElement => (
 export default function About() {
   return (
     <div>
+        <div className="about-nav">
+            <NavBar />
+        </div>
+
         <Members />
         <Hosts />
         <Sponsor />

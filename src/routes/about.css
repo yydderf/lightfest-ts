@@ -11,11 +11,20 @@
 }
 
 .about-container__center {
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+}
+
+.about-nav {
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
 }
 
 .about-img-gallery {
@@ -47,6 +56,21 @@
     display: flex;
     justify-content: center;
     gap: 0.75rem;
+
+    padding: 0 15px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    @media (max-width: 680px) {
+        justify-content: start;
+        overflow: scroll;
+        padding-bottom: 1rem;
+    }
+}
+
+.about-tabs__list::-webkit-scrollbar {
+    display: none;
 }
 
 .about-tabs__trigger {
@@ -60,7 +84,6 @@
     cursor: pointer;
 
     white-space: nowrap;
-    overflow: scroll;
 
     @media (max-width: 860px) {
         font-size: 20px;
@@ -83,7 +106,6 @@
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
-        height: auto;
     }
 }
 
