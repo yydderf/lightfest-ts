@@ -19,8 +19,6 @@ export const departments = [
         name: '公關',
         members: [
             {name: '蔡涵雅'},
-            {name: '劉子齊'},
-            {name: '張宇弘'},
             {name: '蕭之晴'},
             {name: '蘇宥竹'},
         ],
@@ -39,7 +37,7 @@ export const departments = [
         id: 'event-activities',
         name: '活動',
         members: [
-            {name: '陳彥穎'},
+            {name: '林睿霖'},
             {name: '王子薇'},
             {name: '王庭蓁'},
             {name: '潘丞詡'},
@@ -65,8 +63,7 @@ export const departments = [
         members: [
             {name: '賴俞安'},
             {name: '郭譯'},
-            {name: '杜汶芳'},
-            {name: '吳尚澤'},
+            {name: '郭于慧'},
         ],
     },
     {
@@ -81,7 +78,7 @@ export const departments = [
     },
     {
         id: 'resource-management',
-        name: '資料管理',
+        name: '執行秘書',
         members: [{name: '潘丞詡'}],
     },
     {
@@ -90,7 +87,6 @@ export const departments = [
         members: [
             {name: '張棋鈞'},
             {name: '陳品兆'},
-            {name: '張恩愷'},
             {name: '張峻魁'},
             {name: '許訓輔'},
             {name: '簡右群'},

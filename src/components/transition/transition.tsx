@@ -11,7 +11,7 @@ const Transition = (props: Props) => {
     return (
         <div className="video-wrapper">
             <div className="video-filter"/>
-            <video src={videoBackground} autoPlay loop muted />
+            <video src={videoBackground} loop={true} muted={true} autoPlay={true} playsInline={true} />
             <div className="txt-wrapper" style={{top: `${props.page * 100}%`}}>
                 <h1>{props.title}</h1>
                 <h2>{props.subtitle}</h2>
