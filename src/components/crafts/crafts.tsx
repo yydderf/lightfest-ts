@@ -3,7 +3,7 @@ import "./crafts.scss";
 import { motion } from "framer-motion";
 import { useScroll, useSpring, useTransform } from "framer-motion";
 
-import dummy from "/img/mountains.png"
+// import dummy from "/img/mountains.png"
 
 import craft_11 from "/img/crafts/1/3.png"
 import craft_21 from "/img/crafts/2/1.webp"
@@ -75,7 +75,7 @@ const Single: React.FC<{ item: Item }> = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>Model</button>
+            <button>模型</button>
           </motion.div>
         </div>
       </div>

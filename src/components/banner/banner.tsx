@@ -49,7 +49,7 @@ const Banner = () => {
         <div className="banner-wrapper" style={{backgroundImage: `url(${banner})`, backgroundSize: 'cover', width: "100vw", height: "100vh"}}>
             <NavBar />
             <motion.div className="banner" initial="init" animate="animate">
-                <div className="txt-container">
+                <div className="txt-container" style={{overflow: "hidden"}}>
                     <motion.h1 variants={verticalVariants}>光</motion.h1>
                     <motion.h1 variants={verticalVariants}>嶼</motion.h1>
                     <motion.h2 variants={sideVariants}>LIGHTFEST</motion.h2>
