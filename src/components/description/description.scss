@@ -1,0 +1,47 @@
+.description-wrapper {
+    width: 500px;
+    color: #22313f;
+    padding-top: 10%;
+    font-size: large;
+    .description-container {
+        width: 80%;
+        padding-left: 20%;
+        height: 100%;
+        font-size: 18px;
+        line-height: 23px;
+        .overlap-group {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .div {
+                .text-wrapper {
+                    font-size: 100px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        .description-container{
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            padding-left: 10%;
+            padding-top: 10%;
+            font-size: 13px;
+            line-height: 23px;
+            .overlap-group {
+                gap: 20px;
+            }
+            .div {
+                .text-wrapper-2 {
+                    font-size: 18px;
+                }
+                .text-wrapper-3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+

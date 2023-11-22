@@ -9,7 +9,7 @@ type Props = {
 
 const Transition = (props: Props) => {
     return (
-        <div className="video-wrapper">
+        <div className="video-wrapper" style={{backgroundImage: `url("/img/new-${props.page}")`,  height: "100vh", width: "100vw", backgroundSize: "cover", backgroundPosition: "center"}}>
             <div className="video-filter"/>
             <video src={videoBackground} loop={true} muted={true} autoPlay={true} playsInline={true} />
             <div className="txt-wrapper" style={{top: `${props.page * 100}%`}}>

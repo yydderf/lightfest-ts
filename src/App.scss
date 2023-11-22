@@ -1,6 +1,7 @@
-html {
+html{
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -12,7 +13,6 @@ html {
 }
 
 body {
-  background-color: #9AB3D3;
   color:white;
 }
 
@@ -24,4 +24,5 @@ a {
 section {
   height: 100vh;
   scroll-snap-align: center;
+  background-color: #9AB3D3;
 }
