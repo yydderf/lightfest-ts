@@ -15,9 +15,9 @@ const App = () => {
       <section>
         <Description />
       </section>
-      <section>
+      {/* <section>
         <Transition title="起源" subtitle="ORIGIN" page={2}/>
-      </section>
+      </section> */}
       <section>
         <Stories />
       </section>

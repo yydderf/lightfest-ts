@@ -4,27 +4,26 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 30px;
+    color: #22313f;
 
     .stories-header {
+        padding-top: 30px;
         flex: 1;
-        align-self: flex-end;
         display: flex;
-        align-items: center;
-        gap: 20px;
-        width: 1000px;
+        flex-direction: column;
         margin: auto;
-
-        p {
-            font-weight: 200;
+        font-size: small;
+        h1 {
             font-size: 20px;
-            text-align: right;
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
         .stories-header {
             width: 100%;
             padding: 1rem;
+            flex-direction: column;
+            text-align: center;
         
             p {
                 font-size: 0.8rem;
@@ -57,14 +56,13 @@
             h1 {
                 font-size: 96px;
                 font-weight: 100;
-
             }
 
             button {
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
-                background-color: white;
+                background-color: #22313f;
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
@@ -76,45 +74,38 @@
     .stories-container {
         flex: 2;
         display: flex;
-        max-width: 1200px;
+        flex-direction: column;
+        align-items: center;
         margin: auto;
+        gap: 40px;
 
         .stories-box {
-            padding: 50px;
-            border: 0.5px solid white;
+            padding: 15px;
+            height: 100px;
+            border: 0.5px solid #22313f;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            border-radius: 5%;
-            width: 25%;
-
-            button {
-                padding: 10px;
-                background-color: white;
-                border: none;
-                cursor: pointer;
-            }
+            border-radius: 20px;
+            width: 90%;
+            font-size: 18px;
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
         .stories-container {
+            flex: 2;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 40px;
             width: 90%;
 
             .stories-box {
                 width: 100%;
-                padding: 0.5rem;
+                height: 100%;
+                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
                 font-size: 0.8rem;
                 border-radius: 0.5rem;
-
-                button {
-                    padding: 5px;
-                    width: 50%;
-                    display: none;
-                }
             }
         }
     }
