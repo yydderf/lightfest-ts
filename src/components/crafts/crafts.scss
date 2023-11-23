@@ -27,20 +27,34 @@
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 40px;
                 overflow: hidden;
                 padding-left: 10%;
                 padding-right: 10%;
-
-
+                color: #22323f;
+                .artists-container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .craft-title {
                 h2 {
                     font-size: 72px;
                     font-weight: bolder;
-                    color: #22323f;
                 }
 
+                h3 {
+                    font-size: 30px;
+                }
+                }
+
+
+
                 p {
-                    color: #22323f;
                     font-size: 14px;
                     line-height: 23px;
 
@@ -73,9 +87,24 @@
                     padding-left: 10%;
                     padding-right: 10%;
                     padding-bottom: 16rem;
+                    gap: 20px;
+                    .artists-container {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        p {
+                            font-size: 10px;
+                        }
+                    }
 
-                    h2 {
-                        font-size: 1.5rem;
+                    .craft-title {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                        h3 {
+                            font-size: 0.8rem;
+                        }
                     }
 
                     p {
