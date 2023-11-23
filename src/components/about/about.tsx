@@ -27,24 +27,39 @@ const members: Member[] = [
 ]
 
 const Hosts = (): ReactElement => (
-    <section className="about-container about-container__center">
-        <div className="about-host">
-            <h1 className="about-heading">主辦單位</h1>
-            <p>
-                交大藝趣節團隊
-            </p>
-        </div>
-        <div className="about-host">
-            <h1 className="about-heading">協辦單位</h1>
-            <p>
-                國立陽明交通大學博雅書苑、創創工坊、藝文中心、總務處、學生會—交通分會
-            </p>
-        </div>
-        <div className="about-host">
-            <h1 className="about-heading">指導單位</h1>
-            <p>
-                國立陽明交通大學建築研究所、應用藝術研究所、學務處課外活動輔導二組
-            </p>
+    <section className="about-all-container">
+        <div className="about-wrapper">
+            <div className="about-title">
+                <h1>執行</h1>
+                <h1>團隊</h1>
+            </div>
+            <div className="about-container">
+                {departments.map((department) => (
+                    <div className="about-host">
+                        <h1 className="about-heading">{department.name}</h1>
+                        <div className="about-members">
+                            {department.members.map((member) => (
+                                <>
+                                <p>{member.name}</p>
+                                <p style={{fontWeight: "bold"}}>|</p>
+                                </>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className="about-host">
+                <h1 className="about-heading">協辦單位</h1>
+                <p>
+                    國立陽明交通大學博雅書苑、創創工坊、藝文中心、總務處、學生會—交通分會
+                </p>
+            </div>
+            <div className="about-host">
+                <h1 className="about-heading">指導單位</h1>
+                <p>
+                    國立陽明交通大學建築研究所、應用藝術研究所、學務處課外活動輔導二組
+                </p>
+            </div>
         </div>
     </section>
 );
@@ -78,9 +93,13 @@ const Sponsor = (): ReactElement => (<section className="about-container about-c
 
 const Members = (): ReactElement => (
     <section className="team-container">
+        {/* <h1>CORE</h1>
+        <h1>TEAM</h1> */}
         <div className="team-title">
-            <h1 className="about-heading">＜＜光嶼＞＞</h1>
-            <h1 className="about-heading">核心執行團隊</h1>
+            {/* <h1 className="about-heading">＜＜光嶼＞＞</h1> */}
+            {/* <h1 className="about-heading">核心執行團隊</h1> */}
+            <h1 className="about-heading">核心</h1>
+            <h1 className="about-heading">團隊</h1>
         </div>
         <div className="member-grid-container">
             {members.map((member, index) => (
@@ -102,15 +121,15 @@ const Members = (): ReactElement => (
 export default function About() {
   return (
     <div style={{position: "relative", color: "#22323f"}}>
-        <div className="about-host" style={{backgroundImage: `url(${background1})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
+        <div className="about-member" style={{backgroundImage: `url(${background1})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
             <Members />
         </div>
         <div className="about-host" style={{backgroundImage: `url(${background1})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
             <Hosts />
         </div>
-        <div className="about-sponsor" style={{backgroundImage: `url(${background1})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
+        {/* <div className="about-sponsor" style={{backgroundImage: `url(${background1})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
             <Sponsor />
-        </div>
+        </div> */}
     </div>
   );
 }

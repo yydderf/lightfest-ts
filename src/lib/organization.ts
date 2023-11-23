@@ -1,7 +1,36 @@
 export const departments = [
     {
+        id: 'chef-director',
+        name: '總指導',
+        members: [
+            {name: '侯君昊 教授'}
+        ]
+    },
+    {
+        id: 'craft-instructor',
+        name: '作品指導',
+        members: [
+            {name: '曾令理 教授'}
+        ]
+    },
+    {
+        id: 'general-instructor',
+        name: '行政指導',
+        members: [
+            {name: '湯景光 老師'}
+        ]
+    },
+    {
+        id: 'chef',
+        name: '總副召',
+        members: [
+            {name: '廖奕宣'},
+            {name: '蔡涵雅'}
+        ]
+    },
+    {
         id: 'core',
-        name: '核心執行團隊',
+        name: '核心團隊',
         members: [
             {name: '廖奕宣'},
             {name: '蔡涵雅'},
@@ -16,7 +45,7 @@ export const departments = [
     },
     {
         id: 'public-relations',
-        name: '公關',
+        name: '公關部',
         members: [
             {name: '蔡涵雅'},
             {name: '蕭之晴'},
@@ -25,7 +54,7 @@ export const departments = [
     },
     {
         id: 'social-propaganda',
-        name: '行銷社群',
+        name: '行銷部',
         members: [
             {name: '林曉玫'},
             {name: '吳逸萱'},
@@ -35,7 +64,7 @@ export const departments = [
     },
     {
         id: 'event-activities',
-        name: '活動',
+        name: '活動部',
         members: [
             {name: '林睿霖'},
             {name: '王子薇'},
@@ -48,7 +77,7 @@ export const departments = [
     },
     {
         id: 'project-management',
-        name: '專案管理',
+        name: '專案部',
         members: [
             {name: '張鈺群'},
             {name: '蘇家芸'},
@@ -59,7 +88,7 @@ export const departments = [
     },
     {
         id: 'visual-design',
-        name: '視覺設計',
+        name: '設計部',
         members: [
             {name: '賴俞安'},
             {name: '郭譯'},
@@ -68,7 +97,7 @@ export const departments = [
     },
     {
         id: 'general-affairs',
-        name: '總務',
+        name: '總務部',
         members: [
             {name: '黃婉瑜'},
             {name: '王紀璿'},
@@ -83,11 +112,10 @@ export const departments = [
     },
     {
         id: 'technology',
-        name: '數位技術',
+        name: '技術部',
         members: [
             {name: '張棋鈞'},
             {name: '陳品兆'},
-            {name: '張峻魁'},
             {name: '許訓輔'},
             {name: '簡右群'},
             {name: '成文瑄'},
@@ -95,7 +123,7 @@ export const departments = [
     },
     {
         id: 'design',
-        name: '作品',
+        name: '作品部',
         members: [
             {name: '陳筱媛'},
             {name: '甯宇綸'},
@@ -106,6 +134,13 @@ export const departments = [
             {name: '趙雅婷'},
             {name: '張瀚勻'},
             {name: '許佳穎'},
+        ],
+    },
+    {
+        id: 'special-thanks',
+        name: '特別感謝',
+        members: [
+            {name: '謝沅佑'},
         ],
     },
 ];
