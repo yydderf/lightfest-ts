@@ -5,6 +5,10 @@ import Description from "./components/description/description"
 import Transition from "./components/transition/transition"
 import Stories from "./components/stories/stories"
 import Crafts from './components/crafts/crafts'
+import About from "./components/about/about"
+import Sponsor from './components/sponsor/sponsor'
+import Hosts from './components/hosts/hosts'
+import Members from './components/members/members'
 
 const App = () => {
   return (
@@ -26,13 +30,16 @@ const App = () => {
       </section> */}
       <section>
         <Crafts />
+        <About />
       </section>
       {/* <section>Work1</section>
       <section>Work2</section>
       <section>Work3</section>
       <section>Work4</section>
-      <section>Workshop</section>
-      <section>About</section> */}
+      <section>Workshop</section> */}
+      <section>
+        {/* <About /> */}
+      </section>
     </div>
   )
 }

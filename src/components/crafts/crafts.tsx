@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./crafts.scss";
 import { motion } from "framer-motion";
 import { useScroll, useSpring, useTransform } from "framer-motion";
+import About from "../about/about"
 
 import dummy from "/img/mountains.png"
 
@@ -133,7 +134,6 @@ const Single: React.FC<{ item: Item }> = ({ item }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <section>
       <div className="container" ref={ref} style={{backgroundImage: `url(${background})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
         <div className="wrapper">
           {/* <h1>ART</h1>
@@ -157,16 +157,24 @@ const Single: React.FC<{ item: Item }> = ({ item }) => {
           </motion.div>
         </div>
       </div>
-    </section>
   );
 };
 
 const Crafts: React.FC = () => {
 
   return (
+    // <>
+    // {items.map((item) => {
+    //   <section>
+    //     <Single item={item} key={item.id} />
+    //   </section>
+    // })}
+    // </>
     <div className="crafts-wrapper">
       {items.map((item) => (
-        <Single item={item} key={item.id} />
+        <section>
+          <Single item={item} key={item.id} />
+        </section>
       ))}
     </div>
   );

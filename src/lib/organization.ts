@@ -1,7 +1,7 @@
 export const departments = [
     {
         id: 'core',
-        name: '核心',
+        name: '核心執行團隊',
         members: [
             {name: '廖奕宣'},
             {name: '蔡涵雅'},
