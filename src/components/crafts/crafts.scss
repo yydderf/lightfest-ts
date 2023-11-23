@@ -14,13 +14,15 @@
             gap: 50px;
 
 
-            img {
-                width: 500px;
-                margin-left: 5%;
-                object-fit: cover;
-                margin-top: 200px;
-            }
+            .image-container {
+                height: 50%;
+                img {
+                    width: 500px;
+                    object-fit: cover;
+                    margin-top: 200px;
+                }
 
+            }
             .textContainer {
                 flex: 1;
                 display: flex;
@@ -39,7 +41,8 @@
 
                 p {
                     color: #22323f;
-                    font-size: 20px;
+                    font-size: 14px;
+                    line-height: 23px;
 
                 }
 
@@ -54,14 +57,16 @@
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 700px) {
             .wrapper {
                 flex-direction: column;
                 gap: 0px;
                 overflow: hidden;
 
-                img {
-                    width: 350px;
+                .image-container {
+                    img {
+                        width: 350px;
+                    }
                 }
 
                 .textContainer {
