@@ -24,9 +24,9 @@ const App = () => {
       {/* <section>
         <Transition title="作品" subtitle="CRAFTS" page={4}/>
       </section> */}
-      {/* <section>
+      <section>
         <Crafts />
-      </section> */}
+      </section>
       {/* <section>Work1</section>
       <section>Work2</section>
       <section>Work3</section>

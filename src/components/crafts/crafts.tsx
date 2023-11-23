@@ -11,6 +11,8 @@ import craft_31 from "/img/crafts/3/1.jpg"
 import craft_41 from "/img/crafts/4/1.webp"
 import craft_51 from "/img/crafts/5/1.webp"
 
+import background from "/img/new-4.png"
+
 interface Item {
   id: number;
   title: string;
@@ -59,23 +61,18 @@ const items: Item[] = [
 const Single: React.FC<{ item: Item }> = ({ item }) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-130, 200]);
-
   return (
     <section>
-      <div className="container">
+      <div className="container" ref={ref} style={{backgroundImage: `url(${background})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
         <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
-          </div>
-          <motion.div className="textContainer" style={{ y }}>
+          {/* <h1>ART</h1>
+          <h1>{item.title}</h1>
+          <h1></h1> */}
+          <img src={item.img} alt="" style={{borderRadius: "10px", marginTop: "100px", marginBottom: "100px"}}/>
+          <motion.div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>模型</button>
+            {/* <button>模型</button> */}
           </motion.div>
         </div>
       </div>
@@ -97,11 +94,7 @@ const Crafts: React.FC = () => {
   });
 
   return (
-    <div className="crafts-wrapper" ref={ref}>
-      <div className="progress">
-        {/* <h1 style={{letterSpacing: "50px", marginRight: "-50px"}}>作品</h1> */}
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
-      </div>
+    <div className="crafts-wrapper" ref={ref} >
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
