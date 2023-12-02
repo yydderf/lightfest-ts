@@ -64,6 +64,9 @@ const Hosts = (): ReactElement => (
             </div>
             <div className="about-host">
                 <h1 className="about-heading">贊助單位</h1>
+                <p>
+                    阡景燈光音響、MANOMANO、三層山、威秀影城、新天鵝堡桌遊、新細鳳果茶、王子神谷、簡單生活實驗室、豆戀迷、酷樂網
+                </p>
                 {/* <div className="about-img-gallery">
                     {sponsors.map((sponsor, index) => (
                         <img src={sponsor.imgSrc} alt={sponsor.name} key={`sponsor-${index}`} />
