@@ -36,7 +36,9 @@ const Hosts = (): ReactElement => (
             <div className="about-container">
                 {departments.map((department) => (
                     <div className="about-host">
-                        <h1 className="about-heading">{department.name}</h1>
+                        <div className="about-heading">
+                            {department.name}
+                        </div>
                         <div className="about-members">
                             {department.members.map((member) => (
                                 <>
@@ -59,6 +61,14 @@ const Hosts = (): ReactElement => (
                 <p>
                     國立陽明交通大學建築研究所、應用藝術研究所、學務處課外活動輔導二組
                 </p>
+            </div>
+            <div className="about-host">
+                <h1 className="about-heading">贊助單位</h1>
+                {/* <div className="about-img-gallery">
+                    {sponsors.map((sponsor, index) => (
+                        <img src={sponsor.imgSrc} alt={sponsor.name} key={`sponsor-${index}`} />
+                    ))}
+                </div> */}
             </div>
         </div>
     </section>

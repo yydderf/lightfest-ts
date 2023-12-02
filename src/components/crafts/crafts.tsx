@@ -134,13 +134,13 @@ const Single: React.FC<{ item: Item }> = ({ item }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-      <div className="container" ref={ref} style={{backgroundImage: `url(${background})`, height: "100vh", width: "100vw", backgroundSize: "cover"}}>
+      <div className="container" ref={ref} style={{backgroundImage: `url(${background})`, height: "100%", width: "100%", backgroundSize: "cover"}}>
         <div className="wrapper">
           {/* <h1>ART</h1>
           <h1>{item.title}</h1>
           <h1></h1> */}
           <div className="image-container">
-            <motion.img src={item.img} alt="" style={{borderRadius: "10px", marginTop: "100px", marginBottom: "100px"}} whileHover={{scale: 1.05}} />
+            <motion.img src={item.img} alt="" style={{borderRadius: "10px"}} whileHover={{scale: 1.05}} />
           </div>
           <motion.div className="textContainer">
             <div className="craft-title">

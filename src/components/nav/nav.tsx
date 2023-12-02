@@ -10,7 +10,7 @@ const NavBar = () => {
         <span><a href="#">光嶼</a></span>
         <div className="pages">
           <a href="/">主頁</a>
-          <a href="/events">活動</a>
+          {/* <a href="/events">活動</a> */}
           <a href="/">虛擬展場</a>
         </div>
       </div>

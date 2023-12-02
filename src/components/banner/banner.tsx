@@ -47,20 +47,36 @@ const sideVariants = {
 
 const Banner = () => {
     return (
-        <div className="banner-wrapper" style={{backgroundImage: `url(${banner})`,  height: "100vh", width: "100vw", backgroundSize: "cover", backgroundPosition: "center"}}>
+        <>
+        {/* <NavBar /> */}
+        <div className="banner-wrapper" style={{backgroundImage: `url(${banner})`,  height: "100%", width: "100%", backgroundSize: "cover", backgroundPosition: "center"}}>
         {/* // <div className="banner-wrapper"> */}
             <NavBar />
             <motion.div className="banner" initial="init" animate="animate">
                 <div className="txt-container">
-                    <motion.h1 variants={verticalVariants}>光嶼</motion.h1>
+                    <div className="title-container">
+                        <motion.h1 variants={verticalVariants}>光</motion.h1>
+                        <motion.h1 variants={verticalVariants}>嶼</motion.h1>
+                    </div>
                     {/* <motion.h1 variants={verticalVariants}>嶼</motion.h1> */}
-                    <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>LIGHTFEST</motion.h2>
+                    <div className="subtitle-container">
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>L</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>I</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>G</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>H</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>T</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>F</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>E</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>S</motion.h2>
+                        <motion.h2 variants={sideVariants} style={{overflow:"hidden"}}>T</motion.h2>
+                    </div>
                 </div>
                 <div className="scroll-container">
                     <motion.div variants={sideVariants} animate="scroll" className="scroll"/>
                 </div>
             </motion.div>
         </div>
+        </>
     )
 }
 

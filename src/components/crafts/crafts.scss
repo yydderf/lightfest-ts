@@ -19,7 +19,7 @@
                 img {
                     width: 500px;
                     object-fit: cover;
-                    margin-top: 200px;
+                    margin-top: 7.5rem;
                 }
 
             }
@@ -38,7 +38,7 @@
                     flex-direction: row;
                     flex-wrap: wrap;
                     p {
-                        font-size: 14px;
+                        font-size: 1rem;
                     }
                 }
                 .craft-title {
@@ -79,7 +79,8 @@
 
                 .image-container {
                     img {
-                        width: 350px;
+                        width: 20rem;
+                        height: 12rem;
                     }
                 }
 
@@ -94,16 +95,16 @@
                         flex-direction: row;
                         flex-wrap: wrap;
                         p {
-                            font-size: 10px;
+                            font-size: 0.55rem;
                         }
                     }
 
                     .craft-title {
                         h2 {
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
                         }
                         h3 {
-                            font-size: 0.8rem;
+                            font-size: 0.7rem;
                         }
                     }
 

@@ -22,12 +22,12 @@ const boxVariants = {
 
 const Stories = () => {
     return (
-        <div className="stories-wrapper" style={{backgroundImage: `url(${background})`,  height: "100vh", width: "100vw", backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div className="stories-wrapper" style={{backgroundImage: `url(${background})`,  height: "100%", width: "100vw", backgroundSize: "cover", backgroundPosition: "center"}}>
             {/* <img src={mountain} style={{position: "absolute", top: "300vh", width: "100%", height: "100vh", opacity: "0.3"}}/> */}
             <div className="stories-header">
                 {/* <span>{messages[0]}</span> */}
-                <h1 style={{fontSize: "100px"}}>起源</h1>
-                <h1 style={{fontSize: "100px"}}>故事</h1>
+                <h1>起源</h1>
+                <h1>故事</h1>
             </div>
             <div className="stories-container">
                 <motion.div className="stories-box" whileHover={{scale: 1.05, color: "#587fa3", borderColor: "#587fa3"}} whileTap={{scale: 0.95}}>

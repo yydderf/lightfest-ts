@@ -14,7 +14,7 @@
         margin: auto;
         font-size: small;
         h1 {
-            font-size: 20px;
+            font-size: 5rem;
         }
     }
 
@@ -97,8 +97,8 @@
             flex: 2;
             flex-direction: column;
             align-items: center;
-            gap: 40px;
-            width: 90%;
+            gap: 1rem;
+            width: 80%;
 
             .stories-box {
                 width: 100%;
