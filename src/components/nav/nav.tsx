@@ -11,7 +11,7 @@ const NavBar = () => {
         <div className="pages">
           <a href="/">主頁</a>
           {/* <a href="/events">活動</a> */}
-          <a href="/">虛擬展場</a>
+          <a href="/game">虛擬展場</a>
         </div>
       </div>
     </div>
