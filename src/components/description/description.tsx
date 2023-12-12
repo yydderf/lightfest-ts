@@ -3,12 +3,6 @@ import { motion, Variants } from "framer-motion"
 import './description.scss'
 
 import background from "/img/new-2.png"
-import circle from "/img/bub_0.png"
-
-const parentVariant: Variants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 }
-}
 
 const childrenVariant: Variants = {
     initial: { opacity: 0 },

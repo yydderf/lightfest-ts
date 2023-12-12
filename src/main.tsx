@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import Game from "./routes/game";
-import About from "./routes/about";
 import ErrorPage from "./error-page";
 import App from "./App";
 import Events from "./routes/events.tsx";

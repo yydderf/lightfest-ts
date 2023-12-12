@@ -3,7 +3,6 @@ import {motion} from "framer-motion"
 
 import "./about.scss"
 
-import * as Tabs from "@radix-ui/react-tabs";
 import {departments} from "../../lib/organization.ts";
 
 import background1 from "/img/new-4.png"
@@ -115,7 +114,7 @@ const Members = (): ReactElement => (
             <h1 className="about-heading">團隊</h1>
         </div>
         <div className="member-grid-container">
-            {members.map((member, index) => (
+            {members.map((member) => (
                 <div className='member-grid'>
                     <div className="member-grid-title">
                         <p>{member.department}</p>

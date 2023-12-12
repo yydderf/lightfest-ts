@@ -1,4 +1,3 @@
-import React from 'react';
 import './stories.scss'
 
 import { motion } from "framer-motion"
@@ -6,8 +5,6 @@ import { motion } from "framer-motion"
 // import mountain from "/img/11-01.png"
 import background from "/img/new-3.png"
 
-import circle from "/img/bub_0.png"
-import inner_cicle from "/img/bubl_0.png"
 
 const messages = [
     "在一片遼闊的海域中，隱藏著一座古老的島嶼。此地的島民們與大自然緊密相依，島的核心，一個古老的火壇高聳入雲，其熊熊火焰如同島嶼的心臟，賦予這片土地無窮的溫暖與活力。",
@@ -16,9 +13,6 @@ const messages = [
     "當探勘小隊發現火壇的火苗幾乎熄滅時，人們意識到他們必須採取行動，並自發性組成志願隊去添火",
     "最後，島上的溫暖逐漸回歸，人們重新感受到團結和責任的力量",
 ]
-
-const boxVariants = {
-}
 
 const Stories = () => {
     return (

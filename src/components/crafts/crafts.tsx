@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import "./crafts.scss";
 import { motion } from "framer-motion";
-import { useScroll, useSpring, useTransform } from "framer-motion";
-import About from "../about/about"
 
 import dummy from "/img/mountains.png"
 

@@ -2,13 +2,9 @@ import './App.scss'
 
 import Banner from "./components/banner/banner"
 import Description from "./components/description/description"
-import Transition from "./components/transition/transition"
 import Stories from "./components/stories/stories"
 import Crafts from './components/crafts/crafts'
 import About from "./components/about/about"
-import Sponsor from './components/sponsor/sponsor'
-import Hosts from './components/hosts/hosts'
-import Members from './components/members/members'
 
 const App = () => {
   return (
