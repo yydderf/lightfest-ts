@@ -44,8 +44,8 @@ const items: Item[] = [
     eng_title: "Walpurgis Night",
     img: craft_21,
     desc:
-      "「今夜，在這 Walpurgis Night，讓我們一起慶祝百花綻放的春天到來」。本作品結合仿真鮮花及抽象植物形象，當人們靠近裝置時，點亮裝置並使百花綻放，象徵人們透過團結戰勝了嚴酷而寒冷的冬天，重新迎來春天的溫暖與光彩，藉此傳達人與人相遇的意義以及團結的重要性。期望透過這個作品為冬天的校園中增添溫暖，並為人們帶來相遇和互動的契機",
-    artists: ["陳筱媛 (CHEN,XIAO-YUAN)", "成文瑄 (CHENG,WEN-XUAN)", "張瀚勻 (ZHANG,HAN-YUN)", "林亞萱 (LIN,YA-XUAN)", "黃翊庭 (HUANG,YI-TING)"],
+      "「今夜，在這Walpurgis Night，讓我們一起慶祝百花綻放的春天來。」作品主花由晶圓片做為主角，將橙燈打在其表面，隨著雙燈光無限且不同步的旋轉流動，在晶格間形成兩道十字動態閃光，它們靠近、相遇、融合、分開，似火焰再次升華的景象，交織叢生的視覺動態象徵著春天植物的生命蓬勃，也象徵著島民們團結的力量。",
+    artists: ["陳筱媛 (CHEN,HSIAO-YUAN)", "成文瑄 (CHENG,WEN-HSUAN)", "張瀚勻 (ZHANG,HAN-YUN)", "林亞萱 (LIN,YA-HSUAN)", "黃翊庭 (HUANG,YI-TING)"],
   },
   {
     id: 3,

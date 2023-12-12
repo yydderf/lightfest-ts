@@ -140,7 +140,13 @@ export const departments = [
         id: 'special-thanks',
         name: '特別感謝',
         members: [
+            {name: '徐倍銜老師'},
+            {name: '郭明浩老師'},
+            {name: '賴雯淑老師'},
+            {name: '創客俱樂部'},
+            {name: '梁祐誠'},
             {name: '謝沅佑'},
+            {name: '許菱軒'},
         ],
     },
 ];
