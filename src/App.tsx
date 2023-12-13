@@ -5,6 +5,7 @@ import Description from "./components/description/description"
 import Stories from "./components/stories/stories"
 import Crafts from './components/crafts/crafts'
 import About from "./components/about/about"
+import Trailer from "./components/trailer/trailer"
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       </section> */}
       <section>
         <Crafts />
+        <Trailer />
         <About />
       </section>
       {/* <section>Work1</section>

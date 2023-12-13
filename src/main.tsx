@@ -9,6 +9,7 @@ import Game from "./routes/game";
 import ErrorPage from "./error-page";
 import App from "./App";
 import Events from "./routes/events.tsx";
+import Trailer from "./components/trailer/trailer.tsx";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
     path: "/events",
     element: <Events/>,
     errorElement: <ErrorPage />
-  }
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

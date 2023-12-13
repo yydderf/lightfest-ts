@@ -1,0 +1,14 @@
+.trailer-wrapper {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+        font-size: 3rem;
+        color: #22323f;
+    }
+    .player-container {
+        border-radius: 1rem;
+    }
+}
